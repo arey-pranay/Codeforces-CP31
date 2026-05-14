@@ -9,18 +9,12 @@ public class Main {
             long a = sc.nextLong();
             long b = sc.nextLong();
             long n = sc.nextLong();
-            long[] arr = new long[(int)n];
-            for(int i = 0;i<n;i++) arr[i] = sc.nextLong();
-            Arrays.sort(arr);
             long ans = b;
-            for(long i : arr){
-                ans += Math.min(i,a-1);
-                b=1;
-            }
-           
-           
+            for(int i=0;i<n;i++) ans += Math.min(sc.nextLong(),a-1);
             System.out.println(ans);
         } 
         return;
-    }   
+    }
+    
 }
+
