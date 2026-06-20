@@ -11,11 +11,11 @@ public class Main {
           for(int i=0;i<n*k;i++)arr[i]=sc.nextInt();
           long sum = 0;
           
-          int pos = ((n - 1) / 2) * k;
-          int step = n/2+ 1;
+          int step = (n/ 2) + 1;
+          int pos = n*k - step;
           for(int i=0;i<k;i++){
             sum+=arr[pos];
-            pos += step;
+            pos -= step;
           }
           
           System.out.println(sum);
