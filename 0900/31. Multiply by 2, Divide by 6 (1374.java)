@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		while (n-- > 0) {
+		    long num = sc.nextInt();
+		    int threes = 0;
+		    int twos = 0;
+		    while(num%2 == 0){num/=2L;twos++;}
+            while(num %3==0){num/=3L;threes++;}
+            if(num!=1 || twos>threes) System.out.println(-1);
+			else System.out.println(threes + threes - twos); // threes for dividing by 6, and (threes-twos) for multiplying by 2 
+		}
+		sc.close();
+	}
+}
