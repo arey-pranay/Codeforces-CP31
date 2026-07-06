@@ -5,7 +5,6 @@ public class Main {
 		int t = sc.nextInt();
 		while(t-->0) {
 			int n = sc.nextInt();
-			long  minGain = Long.MAX_VALUE;
 			long  sbkaMin = Long.MAX_VALUE;
 			long  sbkaSecMin = Long.MAX_VALUE;
 			long sum = 0;
