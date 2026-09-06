@@ -17,17 +17,16 @@ public class Main{
           arr[i][0] = sc.nextLong();
           arr[i][1] = sc.nextLong();
       }
-     
-      long direct = calculate(arr, a, b);
-      if(k==0) {System.out.println(direct);continue;}
-      
+     long direct = calculate(arr, a, b);
+        if(k==0) {System.out.println(direct);continue;}
       // I think we can try finding the nearest major city from src to dest
-      long nearA = Long.MAX_VALUE, nearB= Long.MAX_VALUE;          
+      long nearA = Long.MAX_VALUE, nearB= Long.MAX_VALUE;    
+      
       for(int i =0;i<k;i++){
          nearA = Math.min(nearA,calculate(arr,a,i));
          nearB = Math.min(nearB,calculate(arr,b,i));
       }
-
+ 
       
       System.out.println(Math.min(direct, (nearA+nearB)));
     }
