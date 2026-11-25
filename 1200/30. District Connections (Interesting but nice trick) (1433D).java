@@ -8,7 +8,7 @@ public class Main{
       int arr[] = new int[n];
       for(int i = 0;i<n;i++) arr[i] = sc.nextInt();// 1 1000 101 1000
       int root = -1;
-      for(int i=1;i<n;i++) if(arrr[i]!=arr[0]){root = i; break;}
+      for(int i=1;i<n;i++) if(arr[i]!=arr[0]){root = i; break;}
       if(root==-1) {System.out.println("NO"); continue;}
       System.out.println("YES");
       for(int i=1;i<n;i++){
